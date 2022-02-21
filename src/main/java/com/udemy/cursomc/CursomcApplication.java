@@ -1,13 +1,13 @@
-package com.udemy.crusomc;
+package com.udemy.cursomc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrusomcApplication {
+public class CursomcApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrusomcApplication.class, args);
+		SpringApplication.run(CursomcApplication.class, args);
 	}
 
 }
