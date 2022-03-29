@@ -1,8 +1,6 @@
 package com.udemy.cursomc.services;
 
-import com.udemy.cursomc.domain.Categoria;
 import com.udemy.cursomc.domain.Cliente;
-import com.udemy.cursomc.dto.CategoriaDTO;
 import com.udemy.cursomc.dto.ClienteDTO;
 import com.udemy.cursomc.repositories.ClienteRepository;
 import com.udemy.cursomc.services.exceptions.DataIntegrityException;
