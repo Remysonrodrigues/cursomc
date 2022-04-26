@@ -1,4 +1,4 @@
-package config;
+package com.udemy.cursomc.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.udemy.cursomc.domain.PagamentoComBoleto;
