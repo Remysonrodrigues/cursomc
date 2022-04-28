@@ -5,6 +5,7 @@ import com.udemy.cursomc.domain.enums.EstadoPagamento;
 import com.udemy.cursomc.domain.enums.TipoCliente;
 import com.udemy.cursomc.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
@@ -13,6 +14,9 @@ import java.util.Arrays;
 
 @Service
 public class DBService {
+
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
 
     @Autowired
     private CategoriaRepository categoriaRepository;
@@ -93,7 +97,7 @@ public class DBService {
         cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
 
         Cliente cli1 = new Cliente(null, "Maria Silva", "maria@gmail.com", "0165874589",
-                TipoCliente.PESSOAFISICA);
+                TipoCliente.PESSOAFISICA, passwordEncoder.encode("teste123"));
 
         cli1.getTelefones().addAll(Arrays.asList("272859568", "996709206"));
 
