@@ -1,8 +1,6 @@
 package com.udemy.cursomc.resources;
 
-import com.udemy.cursomc.domain.Categoria;
 import com.udemy.cursomc.domain.Cliente;
-import com.udemy.cursomc.dto.CategoriaDTO;
 import com.udemy.cursomc.dto.ClienteDTO;
 import com.udemy.cursomc.dto.ClienteNewDTO;
 import com.udemy.cursomc.services.ClienteService;
