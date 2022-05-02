@@ -38,6 +38,8 @@ public class Cliente implements Serializable {
     @JsonIgnore
     private List<Pedido> pedidos = new ArrayList<>();
 
+    private String imageUrl;
+
     public Cliente() {
         addPerfil(Perfil.CLIENTE);
     }
@@ -144,6 +146,14 @@ public class Cliente implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
 }
