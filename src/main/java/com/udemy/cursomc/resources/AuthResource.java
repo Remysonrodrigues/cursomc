@@ -36,8 +36,8 @@ public class AuthResource {
     }
 
     @RequestMapping(value="/forgot", method=RequestMethod.POST)
-    public ResponseEntity<Void> forgot(@Valid @RequestBody EmailDTO obtDto) {
-        authService.sendNewPassword(obtDto.getEmail());
+    public ResponseEntity<Void> forgot(@Valid @RequestBody EmailDTO objDto) {
+        authService.sendNewPassword(objDto.getEmail());
         return ResponseEntity.noContent().build();
     }
 
